@@ -1,0 +1,256 @@
+@font-face {
+    font-family: ExampleFont;
+    src: url(/path/to/fonts/examplefont.woff) format('woff'),
+         url(/path/to/fonts/examplefont.eot) format('eot');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
+  .why-us {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    /* height: 940px; */
+
+
+    overflow: hidden;
+}
+
+.why-us--container {
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 110px;
+    padding-bottom: 395px;
+    background-color: #F5F6F7;
+}
+
+.why-us__video--white {
+    height: 250px;
+    background-color: #ffff;;
+}
+
+.why-us::after {
+    content: '';
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    right: -7vw;
+    pointer-events: none;
+    z-index: 1;
+
+    background-image: url(../images/—Pngtree—gradual\ dots_7324994.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+/* ICON */
+
+.why-us .hero__title {
+    display: flex;
+    justify-content: center;
+    color: var(--orange-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    fill: var(--orange-color);
+    z-index: 2;
+}
+
+.why-us .hero__title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/sun_orange.svg);
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+
+.why-us__title_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    z-index: 2;
+}
+
+
+/* LIST Style */
+
+.why-us__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.why-us__list div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.why-us__list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    padding: 10px;
+    border-radius: 20px;  
+    /* transition: all 2.3s ease;  */
+    z-index: 2;
+
+}
+
+
+.why-us__list img {
+    width: 100px;
+    height: 100px;
+}
+
+.why-us__list li h4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 130%;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    height: 65px;
+}
+
+.why-us__list li p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align:justify;
+
+}
+
+/* VIDEO */
+
+.video {
+    width: 100vw;
+    
+}
+
+
+.why-us__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 20px;
+    width: 1140px;
+    height: 520px;
+    overflow: hidden;
+    z-index: 3;
+
+}
+
+/* .why-us iframe {
+    pointer-events: none;
+} */
+
+@media (max-width: 1630px) {
+    .why-us__list li {
+        width: 40%;
+    }
+
+    .why-us__video {
+        width: 70%;
+        height: 35vw;
+        bottom: 0vw;
+        pointer-events: none;
+
+    
+    }
+
+    .why-us {
+        padding-bottom: 0vw;
+
+    }
+
+    .why-us__list li h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+
+
+    }
+
+    .why-us__video--white {
+        height: 180px;
+        background-color: #ffff;
+    }
+
+}
+
+
+@media (max-width: 620px) {
+    .why-us__list li {
+        width: 90%;
+    }
+
+    .why-us__video {
+        display: none;
+    }
+
+    .why-us__video--white {
+        display: none;
+    }
+
+    .why-us--container {
+        padding-bottom: 100px;
+
+    }
+
+    .why-us__list li h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        height: auto;
+    }
+
+    .why-us__title_block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .why-us::after {
+        right: 0vw;
+    }
+
+    
+}
+
+@media (max-width: 1020px) {
+
+    .why-us .hero__title{
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
+
+

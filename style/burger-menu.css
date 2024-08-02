@@ -1,0 +1,129 @@
+/* Модальне вікно */
+@font-face {
+    font-family: ExampleFont;
+    src: url(/path/to/fonts/examplefont.woff) format('woff'),
+         url(/path/to/fonts/examplefont.eot) format('eot');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+.modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.modal-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    
+}
+
+.modal-logo {
+    width: 100px;
+}
+
+.modal-header a {
+    color: var(--text-color-white);
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'DMSans';
+    transition: all 1.3s ease;
+}
+
+.modal-header a:hover {
+    scale: 1.01;
+   
+   }
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-nav {
+    margin: auto;
+}
+
+.modal-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-menu li {
+    margin: 15px 0;
+}
+
+.modal-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    transition: all 1.3s ease;
+}
+
+.modal-footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+
+/* contacts */
+
+.modal-footer div {
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+}
+
+
+
+.modal-footer p, .modal-footer p {
+    color: #d4d4d4;
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%; 
+    margin-bottom: 12px;
+}
+
+.modal-footer a {
+    list-style: none;
+    color: var(--orange-color);
+    transition: var(--cubic);
+
+
+}
+
+.modal-footer a:hover, .modal-footer a:focus {
+    color: #FF4500; /* Змінити на колір для hover */
+    text-decoration: underline; /* Додати підкреслення при наведенні */
+}

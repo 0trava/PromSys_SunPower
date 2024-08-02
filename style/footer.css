@@ -1,0 +1,254 @@
+
+@font-face {
+    font-family: ExampleFont;
+    src: url(/path/to/fonts/examplefont.woff) format('woff'),
+         url(/path/to/fonts/examplefont.eot) format('eot');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  .footer {
+    background-color: var(--background-durk);
+    background-color: #313233;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom: 40px;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    z-index: 50;
+    overflow: hidden;
+
+}
+
+.footer__top {
+    display: flex;
+    gap: 40px;
+    z-index: 50;
+    background-color: var(--background-durk);
+}
+
+
+.footer__block1 a {
+    color: #EC3F10;
+    z-index: 50;
+}
+
+
+
+.footer__block1 h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #d4d4d4;
+    margin-top: 24px; 
+    width: 15vw;
+    z-index: 50;
+}
+
+.footer__block2, .footer__block3, .footer__block4 {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    z-index: 50;
+    /* gap: 24px; */
+}
+
+.footer__block2 h3, .footer__block3 h3, .footer__block4 h3  {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 130%;
+    color: #fff;
+    margin-bottom: 24px;
+    z-index: 50;
+}
+
+.footer__block2-list a {
+    color: #d4d4d4;
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    z-index: 50;
+
+}
+
+.footer__block2-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 50;
+}
+
+.footer__block3 p, .footer__block4 p {
+    color: #d4d4d4;
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%; 
+    margin-bottom: 12px;
+    z-index: 50;
+}
+
+.footer__block3 a {
+    list-style: none;
+    color: var(--orange-color);
+    transition: var(--cubic);
+    z-index: 50;
+
+
+}
+
+.footer__block3 a:hover, .footer__block3 a:focus {
+    color: #FF4500; /* Змінити на колір для hover */
+    text-decoration: underline; /* Додати підкреслення при наведенні */
+}
+
+.footer__top_block {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Dinamic  */
+
+@media (max-width: 1200px) {
+
+    .footer__top {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer__block4 {
+        width: 100%;
+    }
+
+    .input-container {
+        width: 60%;
+    }
+
+    .footer__block2, .footer__block3 {
+        width: calc(100% / 3);
+    }
+
+    .input-container .button {
+        height: 100%;
+        border: 2px solid var(--orange-color);
+
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .footer__top_block {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer__block1, .footer__block2, .footer__block3 {
+        width: 100%;
+
+
+    }
+
+    .input-container .button {
+        width: 40%;
+
+    }
+
+    .footer__block1 .header-logo a, .footer__block1 .header-logo p  {
+        display: flex;
+    }
+
+    .footer__block1 h3 {
+        display: none;
+    }
+
+    .footer__block1 {
+        padding-bottom: 20px;
+        border-bottom: 2px solid #d4d4d4;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Subscribe */
+.input-container {
+    display: flex;
+}
+
+.input {
+    max-width: 80%;
+    padding: 15px;
+    font-size: 17px;
+    color: black;
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+    border: 2px solid #fff;
+    margin-right: -4px;
+  }
+
+  .input:focus-visible {
+    outline: none; /* Убирает стандартную обводку браузера */
+    border: none; /* Убирает границу при фокусе */
+}
+  
+  .button {
+    border: none;
+    background-color: var(--orange-color);
+    text-decoration: none;
+    padding: 15px;
+    padding-bottom: 17px;
+    font-size: 17px;
+    color: black;
+    fill: black;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    cursor: pointer;
+    height: 100%;
+    transition: var(--cubic);
+    width: 20%;
+  }
+
+  .button:hover, .button:focus {
+    background-color: #FF4500; /* Змінити на колір для hover */
+    box-shadow: 2px solid #FF4500;
+}
+
+
+.footer__line {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 24px;
+    margin-top: 48px;
+    background-color: #d4d4d4;
+}

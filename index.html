@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromSys</title>
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css">
+    <link type="image/png" sizes="192x192" rel="icon" href="./images/Logo PromSys.png">
+
+    <!-- Animate.style -->
+    <link rel="stylesheet" href="./style/animate.css/animate.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+
+    <!-- Swiper - важлива послідовність  -->
+    <link rel="stylesheet" href="./js/libs/swiper/swiper-bundle.min.css">
+    <script src="./js/libs/swiper/swiper-bundle.min.js" defer></script>
+
+    <!-- Підключення JavaScript файлів або скриптів -->
+    <script src="./js/app.js" defer></script>
+    <script src="./js/form.js" defer></script>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header >
+        <div class="header">
+            <div class="header-logo">
+                <img src="./images/Logo PromSys.png" alt="logoPromSys">
+                <div>
+                    <a href="#home">PromSys</a>
+                    <p>Solar & Renewable Energy</p>
+                </div>
+
+            </div>
+
+            <div class="header-nav">
+                <nav class="header-nav-desktop">
+                    <ul class="menu">
+                        <li><a class="hover-link wow bounceInDown" data-wow-duration="2s" href="#aboutus">Про нас</a></li>
+                        <li><a class="hover-link wow bounceInDown" data-wow-duration="2s" data-wow-delay=".1s" href="#why-us">Сервіс</a></li>
+                        <li><a class="hover-link wow bounceInDown" data-wow-duration="2s" data-wow-delay=".2s" href="#portfolio">Портфоліо</a></li>
+                        <li><a class="hover-link wow bounceInDown" data-wow-duration="2s" data-wow-delay=".3s" href="#contact-us">Контакти</a></li>
+                    </ul>
+                </nav>
+
+                <a class="header-nav-burger" onclick="openModal()">
+                </a>
+
+                <a class="cta" href="#contact-us"><span> Залишити заявку</span>
+                    <svg width="15px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+
+        </div>
+
+
+        <!-- Burger menu -->
+        <!-- Modal Window -->
+        <div id="fullScreenModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">✖</span>
+                <div class="modal-header">
+                    <img src="./images/Logo PromSys.png" alt="Logo PromSys" class="modal-logo">
+                    <div>
+                        <a href="#home">PromSys</a>
+                        <p>Solar & Renewable Energy</p>
+                    </div>
+                </div>
+                <nav class="modal-nav">
+                    <ul class="modal-menu">
+                        
+                        <li><a class="hover-link" href="#aboutus">Про нас</a></li>
+                        <li><a class="hover-link" href="#why-us">Сервіс</a></li>
+                        <li><a  class="hover-link" href="#portfolio">Портфоліо</a></li>
+                        <li><a class="hover-link" href="#contact-us">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="modal-footer">
+                    <p>Адреса: Україна, м. Київ, вул. Кирилівська 40</p>
+                    <div>
+                        <p>Тел: <a href="tel:+380442386600">+38 (044) 238 66 00</a></p>
+                        <p>E-mail: <a href="mailto:office@ledps.com.ua">office@ledps.com.ua</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero_top-block">
+            <h1 class="hero__title">
+                PromSys - монтаж сонячних систем під ключ
+            </h1>
+            <div class="hero__after-title">
+                <!-- <h3>Сонячні станції</h3>
+                <h3>Для бізнесу</h3>
+                <h3>Для вашого дому</h3> -->
+            </div>
+        </div>
+
+
+
+
+        <h2 class="hero__pre-title wow pulse animated">Надійні енергетичні рішення </br> для вашого дому та бізнесу</h2>
+
+        <div class="hero__text">
+            <p>Ми віримо в майбутнє, засноване на чистих, відновлюваних джерелах енергії. Тому ми присвячені монтажу інноваційних рішень, які роблять перехід до стійких джерел енергії простішим та доступнішим для приватних будинків та підприємств. Наша команда швидко монтує системи та підключає до передових технологій.</p>
+            
+            <!-- <a class="hero__btn" href="./pages/about.html">Дізнатись більше
+                <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+            </a> -->
+        </div>
+
+
+        
+        <!-- <div class="gradient-circle"></div>
+        <div class="gradient-circle second"></div> -->
+
+
+
+    </section>
+
+
+
+
+    <!-- PROGRESS BAR -->
+    <section class="progress-bar" id="progress-bar">
+        <div class="progress-bar__text-block wow slideInLeft" data-wow-duration="1s">
+            <p class="hero__title">
+                 PromSys - монтаж сонячних систем під ключ
+            </p>
+            <h2 class="progress-bar__title">Наш внесок у розвиток енергетичної свободи</h2>
+            <p class="progress-bar__post-title">Ми проектуємо, будуємо та обслуговуємо сонячні електростанції, системи накопичення енергії, теплові насоси та інше. </p>
+            <p class="progress-bar__post-title">Наша мета – створити унікальний клієнтський досвід для тих, хто обирає сталі та децентралізовані енергетичні рішення.</p>
+            <ul class="progress-bar__list">
+                <li class="progress-bar__li wow slideInLeft" data-wow-duration="1s" >
+                    <p> <span>2014</span>рік заснування</p>
+                    <div class="line"></div>
+                </li>
+                <li class="progress-bar__li wow slideInLeft" data-wow-duration="1s"  data-wow-delay=".25s">
+                    <p> <span>600+</span>станцій збудовано</p>
+                    <div class="line"></div>
+                </li>
+                <li class="progress-bar__li wow slideInLeft" data-wow-duration="1s"  data-wow-delay=".5s">
+                    <p> <span>50+</span>штат спеціалістів</p>
+                    <div class="line"></div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="progress-bar__image wow slideInRight" data-wow-duration="2s">
+            <p>500 +</p>
+            <h3>Задоволених клієнтів</h3>
+        </div>
+    </section>
+
+
+
+
+    <!-- WHY US SECTION -->
+    <section class="why-us" id="why-us">
+    <div class="why-us--container">
+        <p class="hero__title">
+            PromSys - чому обирають нас
+        </p>
+        <div class="why-us__title_block">
+            <h2 class="progress-bar__title">Експертний Монтаж Сонячних Панелей</h2>
+        </div>
+
+        <ul class="why-us__list">
+            <li>
+                <img src="./images/icon/icon_whyus_1.svg" alt="icon_why-us">
+                <h4>Безкоштовний виїзд</h4>
+                <p>Наші спеціалісти здійснюють безкоштовний виїзд для оцінки вашого об'єкта та визначення його сонячного
+                    потенціалу. Це дозволяє зробити відповідні розрахунки та визначити оптимальне розташування сонячних
+                    панелей.</p>
+            </li>
+            <li>
+                <img src="./images/icon/icon_whyus_2.svg" alt="icon_why-us">
+                <h4>Підбір ефективного обладнання</h4>
+                <p>На основі результатів консультації та виїзду наші фахівці допоможуть підібрати найбільш ефективний
+                    комплект обладнання. Ми врахуємо ваші потреби, місцеві умови та бюджет, гарантуючи оптимальні та
+                    вигідні рішення.</p>
+            </li>
+            <li>
+                <img src="./images/icon/icon_whyus_3.svg" alt="icon_why-us">
+                <h4>Професійний монтаж</h4>
+                <p>Наша команда забезпечить повний монтаж сонячної електростанції, включаючи установку фотомодулів та
+                    налагодження всіх необхідних електропідключень.</p>
+            </li>
+            <li>
+                <img src="./images/icon/icon_whyus_4.svg" alt="icon_why-us">
+                <h4>Післяпродажне обслуговування</h4>
+                <p>Після встановлення ми готові надати послуги з технічного обслуговування та віддаленого моніторингу
+                    роботи сонячної електростанції, забезпечуючи її найбільш ефективну роботу протягом усього терміну
+                    служби.</p>
+            </li>
+
+
+
+
+        </ul>
+
+        <div class="why-us__video">
+            <div class="why-us__video--grey"></div>
+            <div class="why-us__video--white"></div>
+            <video width="1250" height="703" autoplay muted controls>
+                <source src="./images/video/Video_Solar_Power.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+    </div>
+    <div class="why-us__video--white"></div>
+    </section>
+
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-us" id="aboutus">
+        <div class="about-us__images">
+            <div class="about-us__image  wow slideInLeft" data-wow-duration="2s"></div>
+            <div class="about-us__image image2  wow slideInLeft" data-wow-duration="2s" data-wow-delay=".5s"></div>
+
+        </div>
+        <div class="about-us__text">
+            <p class="hero__title">
+                PromSys - чому обирають нас
+            </p>
+            <h2 class="progress-bar__title">Будуємо Світле Майбутнє Разом</h2>
+            <p class="progress-bar__post-title">
+                У компанії ТОВ ВП Промислові Системи ми віримо у потужну силу відновлювальної енергії для створення більш стійкого майбутнього. З палкою любов'ю до чистої енергії та зобов'язанням перед нашими клієнтами, ми присвячені наданню найкращих можливих рішень.</p>
+
+            <h4>Наша місія :</h4>
+            <ul class="wow slideInRight" data-wow-duration="2s" >
+                <li class="wow slideInRight" data-wow-duration="2s">Надавати нашим клієнтам чисті, ефективні та доступні рішення з використання відновлювальної енергії.</li>
+                <li class="wow slideInRight" data-wow-duration="2s" data-wow-delay=".25s">Сприяти широкому впровадженню відновлювальної енергії та збільшенню енергетичної незалежності.</li>
+                <li class="wow slideInRight" data-wow-duration="2s" data-wow-delay=".5s">Бути на передньому краї технологій відновлювальної енергії, пропонуючи передові рішення та допомагаючи зробити кращий вибір.</li>
+                
+            </ul>    
+        </div>
+    </section>
+
+
+
+
+
+    <!-- PORTFOLIO SECTION  -->
+    <section class="portfolio" id="portfolio">
+        <p class="hero__title">
+            PromSys - портфоліо проектів
+        </p>
+        <h2 class="portfolio__title">Реалізовані проекти</h2>
+
+<!-- Additional required wrapper -->
+<div class="swiper swiper--container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper swiper--list">
+      <!-- Slides -->
+      <div class="swiper-slide swiper--item" ><img src="./images/portfolio/photo_2024-01-22_12-11-56.jpg" alt="img"></div>
+      <div class="swiper-slide swiper--item" ><img src="./images/portfolio/photo_2024-01-22_12-12-08.jpg" alt="img"></div>
+      <div class="swiper-slide swiper--item" ><img src="./images/portfolio/photo_2024-01-22_12-12-16.jpg" alt="img"></div>
+      <div class="swiper-slide swiper--item" ><img src="./images/portfolio/photo_2024-01-22_12-12-48.jpg" alt="img"></div>
+      <div class="swiper-slide swiper--item" ><img src="./images/portfolio/photo_2024-01-22_12-30-53.jpg" alt="img"></div>
+      <div class="swiper-slide swiper--item" ><img src="./images/portfolio/photo_2024-01-22_12-16-58.jpg" alt="img"></div>
+      <div class="swiper-slide swiper--item" ><img src="./images/portfolio/photo_2024-01-22_12-30-35.jpg" alt="img"></div>
+    
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination swiper--pagination"></div>
+
+  </div>
+
+
+</section>
+
+
+    <!-- TESTIMONIAL SECTION ----------------------------------------->
+    <section class="contactus" id="contact-us">
+        <div class="contactus-container">
+            <div class="contuctus-block">
+                <div class="wow slideInRight contactus-form" data-wow-duration="2s">
+                    <div class="form-container">
+                        <h2 class="form__title">Замовити дзвінок</h2>
+                        <p class="form__text">Будь ласка, залишіть ваші контактні дані і наш менеджер зв'яжеться з вами найближчим часом.</p>
+                        <form class="form" id="contactForm">
+                            <input class="input-style" placeholder="Ім'я" type="text" id="name" name="name" required><br>
+                            <input class="input-style" placeholder="Телефон" type="text" id="phone" name="phone" required><br>
+                            <textarea placeholder="Короткий опис об'єкту чи завдання" class="input-style textarea" id="description" name="description" rows="5" required></textarea><br><br>
+                            <input class="hero__btn" type="submit" value="Відправити">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ------------------------------------------------------>
+    <footer class="footer" id="footer">
+        <div class="footer__top">
+            <div class="footer__top_block">
+            <div class="footer__block1">
+                <div class="header-logo">
+                    <div>
+                        <a href="#home">PromSys</a>
+                        <p>Solar & Renewable Energy</p>
+                    </div>
+                </div>
+                <h3>Ми віримо в силу відновлюваної енергії для створення більш сталого майбутнього України</h3>
+                
+            </div>
+            <div class="footer__block2">
+                <h3>Інформація</h3>
+                <ul class="footer__block2-list">
+                    <li><a href="/">Умови використання сайту</a></li>
+                    <li><a href="/"> Політика конфіденційності</a></li>
+                </ul>
+            </div>
+            <div class="footer__block3">
+                <h3>Контактні дані</h3>
+                <p>Адреса: м.Київ, вул.Кирилівська 40</p>
+                <p>Тел: <a href="tel:+380442386600">+38 (044) 238 66 00</a></p>
+                <p>E-mail: <a href="mailto:office@ledps.com.ua">office@ledps.com.ua</a></p>
+                <p>Працюємо: пн-пт з 9.00 до 18.00</p>
+            </div>
+            </div>
+            <div class="footer__block4">
+                <h3>Підписатись на новини</h3>
+                <p>Підпишіться на нашу розсилку, щоб бути в курсі останніх новин, порад та тенденцій у галузі.</p>
+
+
+                <div class="input-container">
+                    <input placeholder="Enter your email" class="input" name="email" type="email">
+                    <button class="button"><svg width="27" height="8" viewBox="0 0 27 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.3536 4.35355C26.5488 4.15829 26.5488 3.84171 26.3536 3.64645L23.1716 0.464466C22.9763 0.269204 22.6597 0.269204 22.4645 0.464466C22.2692 0.659728 22.2692 0.976311 22.4645 1.17157L25.2929 4L22.4645 6.82843C22.2692 7.02369 22.2692 7.34027 22.4645 7.53553C22.6597 7.7308 22.9763 7.7308 23.1716 7.53553L26.3536 4.35355ZM0 4.5H26V3.5H0V4.5Z" fill="#313233" />
+                      </svg></button> 
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__bottom">
+            <p>Copyright © 2024 PromSys</p>
+        </div>
+
+
+    
+    </footer>
+
+</body>
+
+</html>
